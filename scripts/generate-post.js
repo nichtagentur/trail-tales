@@ -135,8 +135,8 @@ Key points to cover: ${topic.keyPoints.join(', ')}
 Target keywords: ${topic.keywords.join(', ')}`;
 
   const response = await anthropic.messages.create({
-    model: 'claude-sonnet-4-5-20250514',
-    max_tokens: 3000,
+    model: 'claude-sonnet-4-5',
+    max_tokens: 4096,
     messages: [{
       role: 'user',
       content: `Write a comprehensive hiking article titled "${topic.title}". Follow the style rules exactly. Output ONLY the article body in markdown (no front matter, no title H1).`

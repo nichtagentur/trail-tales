@@ -4,47 +4,124 @@
     "title": "Hiking the Dolomites: Best Routes, Huts, and Planning Tips",
     "slug": "hiking-dolomites-guide",
     "category": "trail-guides",
-    "tags": ["europe", "italy", "alps", "multi-day", "via-ferrata"],
-    "keywords": ["dolomites hiking", "dolomites best hikes", "dolomites hut to hut"],
+    "tags": [
+      "europe",
+      "italy",
+      "alps",
+      "multi-day",
+      "via-ferrata"
+    ],
+    "keywords": [
+      "dolomites hiking",
+      "dolomites best hikes",
+      "dolomites hut to hut"
+    ],
     "imageQuery": "dolomites hiking mountains italy",
-    "keyPoints": ["Alta Via 1 and 2 overview", "rifugio system and booking", "best season June-September", "difficulty levels", "getting there from Venice or Innsbruck"],
-    "relatedSlugs": ["swiss-alps-beginners-guide", "austrian-eagle-walk-guide"],
-    "published": false
+    "keyPoints": [
+      "Alta Via 1 and 2 overview",
+      "rifugio system and booking",
+      "best season June-September",
+      "difficulty levels",
+      "getting there from Venice or Innsbruck"
+    ],
+    "relatedSlugs": [
+      "swiss-alps-beginners-guide",
+      "austrian-eagle-walk-guide"
+    ],
+    "published": true
   },
   {
     "id": 2,
     "title": "Tour du Mont Blanc: The Complete Trekking Guide",
     "slug": "tour-du-mont-blanc-guide",
     "category": "trail-guides",
-    "tags": ["europe", "france", "switzerland", "italy", "multi-day", "classic-treks"],
-    "keywords": ["tour du mont blanc", "TMB trek", "mont blanc circuit"],
+    "tags": [
+      "europe",
+      "france",
+      "switzerland",
+      "italy",
+      "multi-day",
+      "classic-treks"
+    ],
+    "keywords": [
+      "tour du mont blanc",
+      "TMB trek",
+      "mont blanc circuit"
+    ],
     "imageQuery": "tour du mont blanc hiking alps",
-    "keyPoints": ["170km route through 3 countries", "11-day itinerary", "hut vs camping options", "physical preparation", "variant routes"],
-    "relatedSlugs": ["hiking-dolomites-guide", "swiss-alps-beginners-guide"],
-    "published": false
+    "keyPoints": [
+      "170km route through 3 countries",
+      "11-day itinerary",
+      "hut vs camping options",
+      "physical preparation",
+      "variant routes"
+    ],
+    "relatedSlugs": [
+      "hiking-dolomites-guide",
+      "swiss-alps-beginners-guide"
+    ],
+    "published": true
   },
   {
     "id": 3,
     "title": "Walking the Camino de Santiago: Routes, Costs, and Tips",
     "slug": "camino-de-santiago-guide",
     "category": "trail-guides",
-    "tags": ["europe", "spain", "long-distance", "pilgrimage", "cultural"],
-    "keywords": ["camino de santiago", "camino frances", "camino routes comparison"],
+    "tags": [
+      "europe",
+      "spain",
+      "long-distance",
+      "pilgrimage",
+      "cultural"
+    ],
+    "keywords": [
+      "camino de santiago",
+      "camino frances",
+      "camino routes comparison"
+    ],
     "imageQuery": "camino de santiago trail spain pilgrimage",
-    "keyPoints": ["French Way vs other routes", "albergue system", "budget breakdown", "physical preparation", "credential and compostela"],
-    "relatedSlugs": ["train-for-long-distance-hike", "multi-day-hike-planning"],
-    "published": false
+    "keyPoints": [
+      "French Way vs other routes",
+      "albergue system",
+      "budget breakdown",
+      "physical preparation",
+      "credential and compostela"
+    ],
+    "relatedSlugs": [
+      "train-for-long-distance-hike",
+      "multi-day-hike-planning"
+    ],
+    "published": true
   },
   {
     "id": 4,
     "title": "Hiking the Scottish Highlands: Best Routes and Wild Camping",
     "slug": "scottish-highlands-hiking-guide",
     "category": "trail-guides",
-    "tags": ["europe", "scotland", "uk", "wild-camping", "munros"],
-    "keywords": ["scottish highlands hiking", "best hikes scotland", "west highland way"],
+    "tags": [
+      "europe",
+      "scotland",
+      "uk",
+      "wild-camping",
+      "munros"
+    ],
+    "keywords": [
+      "scottish highlands hiking",
+      "best hikes scotland",
+      "west highland way"
+    ],
     "imageQuery": "scottish highlands hiking trail mountains",
-    "keyPoints": ["West Highland Way", "Ben Nevis", "wild camping rights", "weather preparation", "midges season"],
-    "relatedSlugs": ["rain-gear-hiking-guide", "laugavegur-iceland-guide"],
+    "keyPoints": [
+      "West Highland Way",
+      "Ben Nevis",
+      "wild camping rights",
+      "weather preparation",
+      "midges season"
+    ],
+    "relatedSlugs": [
+      "rain-gear-hiking-guide",
+      "laugavegur-iceland-guide"
+    ],
     "published": false
   },
   {
@@ -52,11 +129,30 @@
     "title": "Cinque Terre Hiking: Coastal Trails Between the Five Villages",
     "slug": "cinque-terre-hiking-guide",
     "category": "trail-guides",
-    "tags": ["europe", "italy", "coastal", "day-hikes", "beginner-friendly"],
-    "keywords": ["cinque terre hiking trails", "cinque terre walking", "sentiero azzurro"],
+    "tags": [
+      "europe",
+      "italy",
+      "coastal",
+      "day-hikes",
+      "beginner-friendly"
+    ],
+    "keywords": [
+      "cinque terre hiking trails",
+      "cinque terre walking",
+      "sentiero azzurro"
+    ],
     "imageQuery": "cinque terre hiking coastal trail italy",
-    "keyPoints": ["Sentiero Azzurro blue trail", "trail cards and fees", "village to village routes", "best time to visit", "difficulty levels"],
-    "relatedSlugs": ["hiking-dolomites-guide", "daypack-buying-guide"],
+    "keyPoints": [
+      "Sentiero Azzurro blue trail",
+      "trail cards and fees",
+      "village to village routes",
+      "best time to visit",
+      "difficulty levels"
+    ],
+    "relatedSlugs": [
+      "hiking-dolomites-guide",
+      "daypack-buying-guide"
+    ],
     "published": false
   },
   {
@@ -64,11 +160,30 @@
     "title": "Swiss Alps Hiking for Beginners: Easy Trails with Stunning Views",
     "slug": "swiss-alps-beginners-guide",
     "category": "trail-guides",
-    "tags": ["europe", "switzerland", "alps", "beginner-friendly", "day-hikes"],
-    "keywords": ["swiss alps hiking beginners", "easy hikes switzerland", "swiss hiking trails"],
+    "tags": [
+      "europe",
+      "switzerland",
+      "alps",
+      "beginner-friendly",
+      "day-hikes"
+    ],
+    "keywords": [
+      "swiss alps hiking beginners",
+      "easy hikes switzerland",
+      "swiss hiking trails"
+    ],
     "imageQuery": "swiss alps hiking trail summer mountains",
-    "keyPoints": ["graded trail system", "top 10 beginner routes", "Swiss Travel Pass benefits", "mountain huts for lunch", "cable car access trails"],
-    "relatedSlugs": ["hiking-dolomites-guide", "tour-du-mont-blanc-guide"],
+    "keyPoints": [
+      "graded trail system",
+      "top 10 beginner routes",
+      "Swiss Travel Pass benefits",
+      "mountain huts for lunch",
+      "cable car access trails"
+    ],
+    "relatedSlugs": [
+      "hiking-dolomites-guide",
+      "tour-du-mont-blanc-guide"
+    ],
     "published": false
   },
   {
@@ -76,11 +191,30 @@
     "title": "Iceland's Laugavegur Trail: Hiking Through Fire and Ice",
     "slug": "laugavegur-iceland-guide",
     "category": "trail-guides",
-    "tags": ["europe", "iceland", "multi-day", "volcanic", "unique-landscapes"],
-    "keywords": ["laugavegur trail iceland", "iceland hiking", "landmannalaugar to thorsmork"],
+    "tags": [
+      "europe",
+      "iceland",
+      "multi-day",
+      "volcanic",
+      "unique-landscapes"
+    ],
+    "keywords": [
+      "laugavegur trail iceland",
+      "iceland hiking",
+      "landmannalaugar to thorsmork"
+    ],
     "imageQuery": "laugavegur trail iceland colorful mountains",
-    "keyPoints": ["55km in 4 days", "hut booking essentials", "river crossings", "best time late June to August", "bus logistics"],
-    "relatedSlugs": ["scottish-highlands-hiking-guide", "rain-gear-hiking-guide"],
+    "keyPoints": [
+      "55km in 4 days",
+      "hut booking essentials",
+      "river crossings",
+      "best time late June to August",
+      "bus logistics"
+    ],
+    "relatedSlugs": [
+      "scottish-highlands-hiking-guide",
+      "rain-gear-hiking-guide"
+    ],
     "published": false
   },
   {
@@ -88,11 +222,30 @@
     "title": "GR20 Corsica: Europe's Toughest Long-Distance Trail",
     "slug": "gr20-corsica-guide",
     "category": "trail-guides",
-    "tags": ["europe", "france", "corsica", "multi-day", "challenging"],
-    "keywords": ["GR20 corsica", "GR20 guide", "hardest trail europe"],
+    "tags": [
+      "europe",
+      "france",
+      "corsica",
+      "multi-day",
+      "challenging"
+    ],
+    "keywords": [
+      "GR20 corsica",
+      "GR20 guide",
+      "hardest trail europe"
+    ],
     "imageQuery": "GR20 corsica hiking rocky mountains",
-    "keyPoints": ["180km north to south", "16-day standard itinerary", "scrambling sections", "refuge system", "gear requirements"],
-    "relatedSlugs": ["tour-du-mont-blanc-guide", "train-for-long-distance-hike"],
+    "keyPoints": [
+      "180km north to south",
+      "16-day standard itinerary",
+      "scrambling sections",
+      "refuge system",
+      "gear requirements"
+    ],
+    "relatedSlugs": [
+      "tour-du-mont-blanc-guide",
+      "train-for-long-distance-hike"
+    ],
     "published": false
   },
   {
@@ -100,11 +253,30 @@
     "title": "Austria's Eagle Walk: Hiking Across Tyrol on the Adlerweg",
     "slug": "austrian-eagle-walk-guide",
     "category": "trail-guides",
-    "tags": ["europe", "austria", "alps", "long-distance", "multi-day"],
-    "keywords": ["adlerweg eagle walk", "eagle walk austria", "tyrol hiking trail"],
+    "tags": [
+      "europe",
+      "austria",
+      "alps",
+      "long-distance",
+      "multi-day"
+    ],
+    "keywords": [
+      "adlerweg eagle walk",
+      "eagle walk austria",
+      "tyrol hiking trail"
+    ],
     "imageQuery": "adlerweg eagle walk austria tyrol mountains",
-    "keyPoints": ["413km across Tyrol", "33 stages", "hut network", "section highlights", "combining with Innsbruck"],
-    "relatedSlugs": ["hiking-dolomites-guide", "swiss-alps-beginners-guide"],
+    "keyPoints": [
+      "413km across Tyrol",
+      "33 stages",
+      "hut network",
+      "section highlights",
+      "combining with Innsbruck"
+    ],
+    "relatedSlugs": [
+      "hiking-dolomites-guide",
+      "swiss-alps-beginners-guide"
+    ],
     "published": false
   },
   {
@@ -112,11 +284,30 @@
     "title": "Trolltunga Norway: How to Hike to the Famous Rock Formation",
     "slug": "trolltunga-norway-guide",
     "category": "trail-guides",
-    "tags": ["europe", "norway", "day-hikes", "iconic", "challenging"],
-    "keywords": ["trolltunga hike", "trolltunga trail guide", "trolltunga norway"],
+    "tags": [
+      "europe",
+      "norway",
+      "day-hikes",
+      "iconic",
+      "challenging"
+    ],
+    "keywords": [
+      "trolltunga hike",
+      "trolltunga trail guide",
+      "trolltunga norway"
+    ],
     "imageQuery": "trolltunga norway hiking rock formation",
-    "keyPoints": ["28km round trip", "seasonal access June-September", "guided vs self-guided", "parking and shuttle", "overnight camping option"],
-    "relatedSlugs": ["laugavegur-iceland-guide", "scottish-highlands-hiking-guide"],
+    "keyPoints": [
+      "28km round trip",
+      "seasonal access June-September",
+      "guided vs self-guided",
+      "parking and shuttle",
+      "overnight camping option"
+    ],
+    "relatedSlugs": [
+      "laugavegur-iceland-guide",
+      "scottish-highlands-hiking-guide"
+    ],
     "published": false
   },
   {
@@ -124,11 +315,30 @@
     "title": "Grand Canyon Rim-to-Rim: The Ultimate Planning Guide",
     "slug": "grand-canyon-rim-to-rim-guide",
     "category": "trail-guides",
-    "tags": ["americas", "usa", "arizona", "challenging", "iconic"],
-    "keywords": ["grand canyon rim to rim", "grand canyon hiking", "rim to rim hike guide"],
+    "tags": [
+      "americas",
+      "usa",
+      "arizona",
+      "challenging",
+      "iconic"
+    ],
+    "keywords": [
+      "grand canyon rim to rim",
+      "grand canyon hiking",
+      "rim to rim hike guide"
+    ],
     "imageQuery": "grand canyon hiking trail rim to rim",
-    "keyPoints": ["North to South vs South to North", "permit system", "Phantom Ranch reservations", "water and heat management", "shuttle logistics"],
-    "relatedSlugs": ["yosemite-half-dome-guide", "altitude-sickness-prevention"],
+    "keyPoints": [
+      "North to South vs South to North",
+      "permit system",
+      "Phantom Ranch reservations",
+      "water and heat management",
+      "shuttle logistics"
+    ],
+    "relatedSlugs": [
+      "yosemite-half-dome-guide",
+      "altitude-sickness-prevention"
+    ],
     "published": false
   },
   {
@@ -136,11 +346,30 @@
     "title": "Torres del Paine W Trek: Patagonia's Premier Hiking Route",
     "slug": "torres-del-paine-w-trek-guide",
     "category": "trail-guides",
-    "tags": ["americas", "chile", "patagonia", "multi-day", "classic-treks"],
-    "keywords": ["torres del paine W trek", "W trek guide", "patagonia hiking"],
+    "tags": [
+      "americas",
+      "chile",
+      "patagonia",
+      "multi-day",
+      "classic-treks"
+    ],
+    "keywords": [
+      "torres del paine W trek",
+      "W trek guide",
+      "patagonia hiking"
+    ],
     "imageQuery": "torres del paine W trek patagonia",
-    "keyPoints": ["5-day W route itinerary", "refugio vs camping", "booking months in advance", "weather preparation", "getting to Puerto Natales"],
-    "relatedSlugs": ["patagonia-fitz-roy-guide", "rain-gear-hiking-guide"],
+    "keyPoints": [
+      "5-day W route itinerary",
+      "refugio vs camping",
+      "booking months in advance",
+      "weather preparation",
+      "getting to Puerto Natales"
+    ],
+    "relatedSlugs": [
+      "patagonia-fitz-roy-guide",
+      "rain-gear-hiking-guide"
+    ],
     "published": false
   },
   {
@@ -148,11 +377,30 @@
     "title": "Inca Trail to Machu Picchu: Permits, Packing, and Preparation",
     "slug": "inca-trail-machu-picchu-guide",
     "category": "trail-guides",
-    "tags": ["americas", "peru", "multi-day", "cultural", "classic-treks"],
-    "keywords": ["inca trail", "inca trail permits", "machu picchu hike"],
+    "tags": [
+      "americas",
+      "peru",
+      "multi-day",
+      "cultural",
+      "classic-treks"
+    ],
+    "keywords": [
+      "inca trail",
+      "inca trail permits",
+      "machu picchu hike"
+    ],
     "imageQuery": "inca trail hiking machu picchu peru",
-    "keyPoints": ["4-day classic route", "permit booking 6 months ahead", "altitude acclimatization in Cusco", "licensed operator requirement", "alternative treks"],
-    "relatedSlugs": ["altitude-sickness-prevention", "train-for-long-distance-hike"],
+    "keyPoints": [
+      "4-day classic route",
+      "permit booking 6 months ahead",
+      "altitude acclimatization in Cusco",
+      "licensed operator requirement",
+      "alternative treks"
+    ],
+    "relatedSlugs": [
+      "altitude-sickness-prevention",
+      "train-for-long-distance-hike"
+    ],
     "published": false
   },
   {
@@ -160,11 +408,30 @@
     "title": "Best Day Hikes in Banff National Park: A Local's Guide",
     "slug": "banff-day-hikes-guide",
     "category": "trail-guides",
-    "tags": ["americas", "canada", "rockies", "day-hikes", "beginner-friendly"],
-    "keywords": ["banff day hikes", "best hikes banff", "banff national park trails"],
+    "tags": [
+      "americas",
+      "canada",
+      "rockies",
+      "day-hikes",
+      "beginner-friendly"
+    ],
+    "keywords": [
+      "banff day hikes",
+      "best hikes banff",
+      "banff national park trails"
+    ],
     "imageQuery": "banff national park hiking lake mountains",
-    "keyPoints": ["top 10 day hikes by difficulty", "Lake Louise area trails", "bear safety protocols", "parking and shuttle tips", "scrambles for experienced hikers"],
-    "relatedSlugs": ["bear-safety-hiking-guide", "daypack-buying-guide"],
+    "keyPoints": [
+      "top 10 day hikes by difficulty",
+      "Lake Louise area trails",
+      "bear safety protocols",
+      "parking and shuttle tips",
+      "scrambles for experienced hikers"
+    ],
+    "relatedSlugs": [
+      "bear-safety-hiking-guide",
+      "daypack-buying-guide"
+    ],
     "published": false
   },
   {
@@ -172,11 +439,30 @@
     "title": "Best Sections of the Appalachian Trail for Weekend Hikers",
     "slug": "appalachian-trail-sections-guide",
     "category": "trail-guides",
-    "tags": ["americas", "usa", "long-distance", "sections", "multi-day"],
-    "keywords": ["appalachian trail best sections", "appalachian trail weekend hikes", "AT section hiking"],
+    "tags": [
+      "americas",
+      "usa",
+      "long-distance",
+      "sections",
+      "multi-day"
+    ],
+    "keywords": [
+      "appalachian trail best sections",
+      "appalachian trail weekend hikes",
+      "AT section hiking"
+    ],
     "imageQuery": "appalachian trail hiking forest mountains",
-    "keyPoints": ["top 8 weekend sections", "Shenandoah to Whites highlights", "shelter system", "resupply points", "section hiking logistics"],
-    "relatedSlugs": ["multi-day-hike-planning", "ultralight-backpacking-guide"],
+    "keyPoints": [
+      "top 8 weekend sections",
+      "Shenandoah to Whites highlights",
+      "shelter system",
+      "resupply points",
+      "section hiking logistics"
+    ],
+    "relatedSlugs": [
+      "multi-day-hike-planning",
+      "ultralight-backpacking-guide"
+    ],
     "published": false
   },
   {
@@ -184,11 +470,30 @@
     "title": "Patagonia's Mount Fitz Roy: Day Hike to Laguna de los Tres",
     "slug": "patagonia-fitz-roy-guide",
     "category": "trail-guides",
-    "tags": ["americas", "argentina", "patagonia", "day-hikes", "iconic"],
-    "keywords": ["fitz roy hike", "laguna de los tres", "el chalten hiking"],
+    "tags": [
+      "americas",
+      "argentina",
+      "patagonia",
+      "day-hikes",
+      "iconic"
+    ],
+    "keywords": [
+      "fitz roy hike",
+      "laguna de los tres",
+      "el chalten hiking"
+    ],
     "imageQuery": "fitz roy patagonia hiking laguna de los tres",
-    "keyPoints": ["El Chalten base town", "trail to Laguna de los Tres", "weather windows", "multi-day options", "budget tips"],
-    "relatedSlugs": ["torres-del-paine-w-trek-guide", "rain-gear-hiking-guide"],
+    "keyPoints": [
+      "El Chalten base town",
+      "trail to Laguna de los Tres",
+      "weather windows",
+      "multi-day options",
+      "budget tips"
+    ],
+    "relatedSlugs": [
+      "torres-del-paine-w-trek-guide",
+      "rain-gear-hiking-guide"
+    ],
     "published": false
   },
   {
@@ -196,11 +501,30 @@
     "title": "Yosemite Half Dome: Permits, Cables, and the Full Day Hike",
     "slug": "yosemite-half-dome-guide",
     "category": "trail-guides",
-    "tags": ["americas", "usa", "california", "challenging", "iconic"],
-    "keywords": ["half dome hike", "half dome permits", "yosemite half dome guide"],
+    "tags": [
+      "americas",
+      "usa",
+      "california",
+      "challenging",
+      "iconic"
+    ],
+    "keywords": [
+      "half dome hike",
+      "half dome permits",
+      "yosemite half dome guide"
+    ],
     "imageQuery": "yosemite half dome hiking cables trail",
-    "keyPoints": ["permit lottery system", "Mist Trail vs John Muir Trail approach", "cable section preparation", "14-mile day hike", "training recommendations"],
-    "relatedSlugs": ["grand-canyon-rim-to-rim-guide", "train-for-long-distance-hike"],
+    "keyPoints": [
+      "permit lottery system",
+      "Mist Trail vs John Muir Trail approach",
+      "cable section preparation",
+      "14-mile day hike",
+      "training recommendations"
+    ],
+    "relatedSlugs": [
+      "grand-canyon-rim-to-rim-guide",
+      "train-for-long-distance-hike"
+    ],
     "published": false
   },
   {
@@ -208,11 +532,30 @@
     "title": "Everest Base Camp Trek: What to Expect and How to Prepare",
     "slug": "everest-base-camp-trek-guide",
     "category": "trail-guides",
-    "tags": ["asia", "nepal", "multi-day", "high-altitude", "classic-treks"],
-    "keywords": ["everest base camp trek", "EBC trek guide", "nepal trekking"],
+    "tags": [
+      "asia",
+      "nepal",
+      "multi-day",
+      "high-altitude",
+      "classic-treks"
+    ],
+    "keywords": [
+      "everest base camp trek",
+      "EBC trek guide",
+      "nepal trekking"
+    ],
     "imageQuery": "everest base camp trek nepal himalayas",
-    "keyPoints": ["14-day itinerary", "teahouse trekking", "altitude acclimatization schedule", "permits and fees", "independent vs guided"],
-    "relatedSlugs": ["annapurna-circuit-guide", "altitude-sickness-prevention"],
+    "keyPoints": [
+      "14-day itinerary",
+      "teahouse trekking",
+      "altitude acclimatization schedule",
+      "permits and fees",
+      "independent vs guided"
+    ],
+    "relatedSlugs": [
+      "annapurna-circuit-guide",
+      "altitude-sickness-prevention"
+    ],
     "published": false
   },
   {
@@ -220,11 +563,30 @@
     "title": "Annapurna Circuit: The Classic Nepal Trek Guide",
     "slug": "annapurna-circuit-guide",
     "category": "trail-guides",
-    "tags": ["asia", "nepal", "multi-day", "high-altitude", "classic-treks"],
-    "keywords": ["annapurna circuit", "annapurna circuit guide", "nepal trekking annapurna"],
+    "tags": [
+      "asia",
+      "nepal",
+      "multi-day",
+      "high-altitude",
+      "classic-treks"
+    ],
+    "keywords": [
+      "annapurna circuit",
+      "annapurna circuit guide",
+      "nepal trekking annapurna"
+    ],
     "imageQuery": "annapurna circuit trek nepal mountains",
-    "keyPoints": ["18-21 day route", "Thorong La pass at 5416m", "TIMS and permit requirements", "best months October-November", "road encroachment updates"],
-    "relatedSlugs": ["everest-base-camp-trek-guide", "altitude-sickness-prevention"],
+    "keyPoints": [
+      "18-21 day route",
+      "Thorong La pass at 5416m",
+      "TIMS and permit requirements",
+      "best months October-November",
+      "road encroachment updates"
+    ],
+    "relatedSlugs": [
+      "everest-base-camp-trek-guide",
+      "altitude-sickness-prevention"
+    ],
     "published": false
   },
   {
@@ -232,11 +594,30 @@
     "title": "New Zealand's Milford Track: Booking the 'Finest Walk in the World'",
     "slug": "milford-track-new-zealand-guide",
     "category": "trail-guides",
-    "tags": ["oceania", "new-zealand", "multi-day", "great-walks", "rainforest"],
-    "keywords": ["milford track", "milford track booking", "new zealand great walks"],
+    "tags": [
+      "oceania",
+      "new-zealand",
+      "multi-day",
+      "great-walks",
+      "rainforest"
+    ],
+    "keywords": [
+      "milford track",
+      "milford track booking",
+      "new zealand great walks"
+    ],
     "imageQuery": "milford track new zealand hiking fiordland",
-    "keyPoints": ["4-day 53km route", "DOC hut booking opens May", "guided vs independent", "rain preparation", "Mackinnon Pass highlights"],
-    "relatedSlugs": ["overland-track-tasmania-guide", "rain-gear-hiking-guide"],
+    "keyPoints": [
+      "4-day 53km route",
+      "DOC hut booking opens May",
+      "guided vs independent",
+      "rain preparation",
+      "Mackinnon Pass highlights"
+    ],
+    "relatedSlugs": [
+      "overland-track-tasmania-guide",
+      "rain-gear-hiking-guide"
+    ],
     "published": false
   },
   {
@@ -244,11 +625,30 @@
     "title": "Climbing Mount Fuji: Routes, Seasons, and Practical Tips",
     "slug": "mount-fuji-hiking-guide",
     "category": "trail-guides",
-    "tags": ["asia", "japan", "volcanic", "iconic", "challenging"],
-    "keywords": ["mount fuji hiking", "climbing mount fuji", "fuji trail guide"],
+    "tags": [
+      "asia",
+      "japan",
+      "volcanic",
+      "iconic",
+      "challenging"
+    ],
+    "keywords": [
+      "mount fuji hiking",
+      "climbing mount fuji",
+      "fuji trail guide"
+    ],
     "imageQuery": "mount fuji hiking trail japan sunrise",
-    "keyPoints": ["4 routes compared", "July-September season", "mountain hut reservations", "sunrise summit timing", "altitude and fitness prep"],
-    "relatedSlugs": ["everest-base-camp-trek-guide", "altitude-sickness-prevention"],
+    "keyPoints": [
+      "4 routes compared",
+      "July-September season",
+      "mountain hut reservations",
+      "sunrise summit timing",
+      "altitude and fitness prep"
+    ],
+    "relatedSlugs": [
+      "everest-base-camp-trek-guide",
+      "altitude-sickness-prevention"
+    ],
     "published": false
   },
   {
@@ -256,11 +656,30 @@
     "title": "Tasmania's Overland Track: Australia's Premier Multi-Day Hike",
     "slug": "overland-track-tasmania-guide",
     "category": "trail-guides",
-    "tags": ["oceania", "australia", "tasmania", "multi-day", "wilderness"],
-    "keywords": ["overland track tasmania", "overland track guide", "tasmania hiking"],
+    "tags": [
+      "oceania",
+      "australia",
+      "tasmania",
+      "multi-day",
+      "wilderness"
+    ],
+    "keywords": [
+      "overland track tasmania",
+      "overland track guide",
+      "tasmania hiking"
+    ],
     "imageQuery": "overland track tasmania hiking cradle mountain",
-    "keyPoints": ["65km in 6 days", "booking and permits", "hut vs tent options", "side trips worth taking", "gear for changeable weather"],
-    "relatedSlugs": ["milford-track-new-zealand-guide", "rain-gear-hiking-guide"],
+    "keyPoints": [
+      "65km in 6 days",
+      "booking and permits",
+      "hut vs tent options",
+      "side trips worth taking",
+      "gear for changeable weather"
+    ],
+    "relatedSlugs": [
+      "milford-track-new-zealand-guide",
+      "rain-gear-hiking-guide"
+    ],
     "published": false
   },
   {
@@ -268,11 +687,30 @@
     "title": "Best Hiking Boots for Wide Feet: Tested and Reviewed",
     "slug": "hiking-boots-wide-feet-guide",
     "category": "gear-reviews",
-    "tags": ["gear", "boots", "footwear", "wide-feet", "buying-guide"],
-    "keywords": ["hiking boots wide feet", "best wide hiking boots", "wide fit hiking boots"],
+    "tags": [
+      "gear",
+      "boots",
+      "footwear",
+      "wide-feet",
+      "buying-guide"
+    ],
+    "keywords": [
+      "hiking boots wide feet",
+      "best wide hiking boots",
+      "wide fit hiking boots"
+    ],
     "imageQuery": "hiking boots trail outdoor footwear",
-    "keyPoints": ["top 7 wide-fit boots", "brand width comparisons", "break-in tips", "insole upgrades", "when to size up vs go wide"],
-    "relatedSlugs": ["knee-pain-prevention-hiking", "train-for-long-distance-hike"],
+    "keyPoints": [
+      "top 7 wide-fit boots",
+      "brand width comparisons",
+      "break-in tips",
+      "insole upgrades",
+      "when to size up vs go wide"
+    ],
+    "relatedSlugs": [
+      "knee-pain-prevention-hiking",
+      "train-for-long-distance-hike"
+    ],
     "published": false
   },
   {
@@ -280,11 +718,30 @@
     "title": "Ultralight Backpacking: How to Cut Pack Weight Without Losing Comfort",
     "slug": "ultralight-backpacking-guide",
     "category": "gear-reviews",
-    "tags": ["gear", "ultralight", "backpacking", "weight-saving", "buying-guide"],
-    "keywords": ["ultralight backpacking", "cut pack weight", "ultralight gear guide"],
+    "tags": [
+      "gear",
+      "ultralight",
+      "backpacking",
+      "weight-saving",
+      "buying-guide"
+    ],
+    "keywords": [
+      "ultralight backpacking",
+      "cut pack weight",
+      "ultralight gear guide"
+    ],
     "imageQuery": "ultralight backpacking gear lightweight hiking",
-    "keyPoints": ["base weight targets", "big three upgrades", "worn weight strategy", "budget ultralight picks", "when ultralight goes too far"],
-    "relatedSlugs": ["daypack-buying-guide", "multi-day-hike-planning"],
+    "keyPoints": [
+      "base weight targets",
+      "big three upgrades",
+      "worn weight strategy",
+      "budget ultralight picks",
+      "when ultralight goes too far"
+    ],
+    "relatedSlugs": [
+      "daypack-buying-guide",
+      "multi-day-hike-planning"
+    ],
     "published": false
   },
   {
@@ -292,11 +749,30 @@
     "title": "Best Daypacks for Hiking: Size, Fit, and Feature Guide",
     "slug": "daypack-buying-guide",
     "category": "gear-reviews",
-    "tags": ["gear", "daypacks", "backpacks", "buying-guide", "beginner-friendly"],
-    "keywords": ["best daypack hiking", "hiking daypack guide", "daypack size guide"],
+    "tags": [
+      "gear",
+      "daypacks",
+      "backpacks",
+      "buying-guide",
+      "beginner-friendly"
+    ],
+    "keywords": [
+      "best daypack hiking",
+      "hiking daypack guide",
+      "daypack size guide"
+    ],
     "imageQuery": "hiking daypack backpack trail outdoors",
-    "keyPoints": ["15L vs 20L vs 30L", "fit and suspension systems", "top picks by category", "hydration compatibility", "features that matter"],
-    "relatedSlugs": ["ultralight-backpacking-guide", "cinque-terre-hiking-guide"],
+    "keyPoints": [
+      "15L vs 20L vs 30L",
+      "fit and suspension systems",
+      "top picks by category",
+      "hydration compatibility",
+      "features that matter"
+    ],
+    "relatedSlugs": [
+      "ultralight-backpacking-guide",
+      "cinque-terre-hiking-guide"
+    ],
     "published": false
   },
   {
@@ -304,11 +780,29 @@
     "title": "Trekking Poles: Do You Need Them and How to Choose",
     "slug": "trekking-poles-guide",
     "category": "gear-reviews",
-    "tags": ["gear", "trekking-poles", "buying-guide", "joint-health"],
-    "keywords": ["trekking poles guide", "best trekking poles", "hiking poles review"],
+    "tags": [
+      "gear",
+      "trekking-poles",
+      "buying-guide",
+      "joint-health"
+    ],
+    "keywords": [
+      "trekking poles guide",
+      "best trekking poles",
+      "hiking poles review"
+    ],
     "imageQuery": "trekking poles hiking mountains trail",
-    "keyPoints": ["benefits for knees and stability", "carbon vs aluminum", "locking mechanisms", "proper height and technique", "top picks by price"],
-    "relatedSlugs": ["knee-pain-prevention-hiking", "hiking-boots-wide-feet-guide"],
+    "keyPoints": [
+      "benefits for knees and stability",
+      "carbon vs aluminum",
+      "locking mechanisms",
+      "proper height and technique",
+      "top picks by price"
+    ],
+    "relatedSlugs": [
+      "knee-pain-prevention-hiking",
+      "hiking-boots-wide-feet-guide"
+    ],
     "published": false
   },
   {
@@ -316,11 +810,30 @@
     "title": "Rain Gear for Hiking: Jackets, Pants, and Pack Covers Reviewed",
     "slug": "rain-gear-hiking-guide",
     "category": "gear-reviews",
-    "tags": ["gear", "rain-gear", "waterproof", "buying-guide", "layers"],
-    "keywords": ["rain gear hiking", "best rain jacket hiking", "waterproof hiking gear"],
+    "tags": [
+      "gear",
+      "rain-gear",
+      "waterproof",
+      "buying-guide",
+      "layers"
+    ],
+    "keywords": [
+      "rain gear hiking",
+      "best rain jacket hiking",
+      "waterproof hiking gear"
+    ],
     "imageQuery": "hiking rain gear waterproof jacket mountains",
-    "keyPoints": ["waterproof vs water-resistant", "breathability ratings explained", "top jacket picks", "rain pants worth it?", "pack cover vs liner"],
-    "relatedSlugs": ["scottish-highlands-hiking-guide", "milford-track-new-zealand-guide"],
+    "keyPoints": [
+      "waterproof vs water-resistant",
+      "breathability ratings explained",
+      "top jacket picks",
+      "rain pants worth it?",
+      "pack cover vs liner"
+    ],
+    "relatedSlugs": [
+      "scottish-highlands-hiking-guide",
+      "milford-track-new-zealand-guide"
+    ],
     "published": false
   },
   {
@@ -328,11 +841,30 @@
     "title": "Water Filtration for Hiking: Filters, Purifiers, and UV Compared",
     "slug": "water-filtration-hiking-guide",
     "category": "gear-reviews",
-    "tags": ["gear", "water-filtration", "safety", "buying-guide", "backcountry"],
-    "keywords": ["water filter hiking", "best water purifier backpacking", "hiking water treatment"],
+    "tags": [
+      "gear",
+      "water-filtration",
+      "safety",
+      "buying-guide",
+      "backcountry"
+    ],
+    "keywords": [
+      "water filter hiking",
+      "best water purifier backpacking",
+      "hiking water treatment"
+    ],
     "imageQuery": "water filter hiking backcountry stream",
-    "keyPoints": ["filter vs purifier vs UV", "flow rate comparisons", "gravity vs squeeze vs pump", "top picks for different trip types", "when to use chemical treatment"],
-    "relatedSlugs": ["ultralight-backpacking-guide", "multi-day-hike-planning"],
+    "keyPoints": [
+      "filter vs purifier vs UV",
+      "flow rate comparisons",
+      "gravity vs squeeze vs pump",
+      "top picks for different trip types",
+      "when to use chemical treatment"
+    ],
+    "relatedSlugs": [
+      "ultralight-backpacking-guide",
+      "multi-day-hike-planning"
+    ],
     "published": false
   },
   {
@@ -340,11 +872,30 @@
     "title": "How to Read Topographic Maps for Hiking Navigation",
     "slug": "read-topographic-maps-guide",
     "category": "how-to",
-    "tags": ["skills", "navigation", "maps", "safety", "beginner-friendly"],
-    "keywords": ["read topographic maps", "topo map hiking", "map navigation hiking"],
+    "tags": [
+      "skills",
+      "navigation",
+      "maps",
+      "safety",
+      "beginner-friendly"
+    ],
+    "keywords": [
+      "read topographic maps",
+      "topo map hiking",
+      "map navigation hiking"
+    ],
     "imageQuery": "topographic map hiking compass navigation",
-    "keyPoints": ["contour lines explained", "reading elevation and terrain", "map scale and distance", "combining with compass", "digital vs paper maps"],
-    "relatedSlugs": ["multi-day-hike-planning", "leave-no-trace-guide"],
+    "keyPoints": [
+      "contour lines explained",
+      "reading elevation and terrain",
+      "map scale and distance",
+      "combining with compass",
+      "digital vs paper maps"
+    ],
+    "relatedSlugs": [
+      "multi-day-hike-planning",
+      "leave-no-trace-guide"
+    ],
     "published": false
   },
   {
@@ -352,11 +903,30 @@
     "title": "Altitude Sickness Prevention: Symptoms, Treatment, and Acclimatization",
     "slug": "altitude-sickness-prevention",
     "category": "how-to",
-    "tags": ["skills", "health", "altitude", "safety", "high-altitude"],
-    "keywords": ["altitude sickness prevention", "AMS symptoms hiking", "acclimatization hiking"],
+    "tags": [
+      "skills",
+      "health",
+      "altitude",
+      "safety",
+      "high-altitude"
+    ],
+    "keywords": [
+      "altitude sickness prevention",
+      "AMS symptoms hiking",
+      "acclimatization hiking"
+    ],
     "imageQuery": "high altitude hiking mountains acclimatization",
-    "keyPoints": ["AMS HACE HAPE explained", "golden rule of acclimatization", "medication options", "when to descend", "pre-trip preparation"],
-    "relatedSlugs": ["everest-base-camp-trek-guide", "annapurna-circuit-guide"],
+    "keyPoints": [
+      "AMS HACE HAPE explained",
+      "golden rule of acclimatization",
+      "medication options",
+      "when to descend",
+      "pre-trip preparation"
+    ],
+    "relatedSlugs": [
+      "everest-base-camp-trek-guide",
+      "annapurna-circuit-guide"
+    ],
     "published": false
   },
   {
@@ -364,11 +934,30 @@
     "title": "Bear Safety for Hikers: Prevention, Encounters, and Bear Canisters",
     "slug": "bear-safety-hiking-guide",
     "category": "how-to",
-    "tags": ["skills", "safety", "wildlife", "bears", "backcountry"],
-    "keywords": ["bear safety hiking", "bear encounter what to do", "bear canister guide"],
+    "tags": [
+      "skills",
+      "safety",
+      "wildlife",
+      "bears",
+      "backcountry"
+    ],
+    "keywords": [
+      "bear safety hiking",
+      "bear encounter what to do",
+      "bear canister guide"
+    ],
     "imageQuery": "bear safety hiking wilderness trail",
-    "keyPoints": ["black bear vs grizzly behavior", "prevention and food storage", "encounter protocols", "bear spray usage", "bear canister requirements"],
-    "relatedSlugs": ["banff-day-hikes-guide", "appalachian-trail-sections-guide"],
+    "keyPoints": [
+      "black bear vs grizzly behavior",
+      "prevention and food storage",
+      "encounter protocols",
+      "bear spray usage",
+      "bear canister requirements"
+    ],
+    "relatedSlugs": [
+      "banff-day-hikes-guide",
+      "appalachian-trail-sections-guide"
+    ],
     "published": false
   },
   {
@@ -376,11 +965,30 @@
     "title": "How to Plan a Multi-Day Hike: Logistics, Resupply, and Itinerary",
     "slug": "multi-day-hike-planning",
     "category": "how-to",
-    "tags": ["skills", "planning", "multi-day", "logistics", "beginner-friendly"],
-    "keywords": ["plan multi-day hike", "multi-day hiking guide", "backpacking trip planning"],
+    "tags": [
+      "skills",
+      "planning",
+      "multi-day",
+      "logistics",
+      "beginner-friendly"
+    ],
+    "keywords": [
+      "plan multi-day hike",
+      "multi-day hiking guide",
+      "backpacking trip planning"
+    ],
     "imageQuery": "multi-day hiking planning map backpack",
-    "keyPoints": ["route planning steps", "daily mileage targets", "resupply strategy", "permit and reservation timeline", "emergency planning"],
-    "relatedSlugs": ["ultralight-backpacking-guide", "water-filtration-hiking-guide"],
+    "keyPoints": [
+      "route planning steps",
+      "daily mileage targets",
+      "resupply strategy",
+      "permit and reservation timeline",
+      "emergency planning"
+    ],
+    "relatedSlugs": [
+      "ultralight-backpacking-guide",
+      "water-filtration-hiking-guide"
+    ],
     "published": false
   },
   {
@@ -388,11 +996,30 @@
     "title": "Leave No Trace: 7 Principles Every Hiker Should Follow",
     "slug": "leave-no-trace-guide",
     "category": "how-to",
-    "tags": ["skills", "ethics", "environment", "leave-no-trace", "beginner-friendly"],
-    "keywords": ["leave no trace principles", "LNT hiking", "trail ethics"],
+    "tags": [
+      "skills",
+      "ethics",
+      "environment",
+      "leave-no-trace",
+      "beginner-friendly"
+    ],
+    "keywords": [
+      "leave no trace principles",
+      "LNT hiking",
+      "trail ethics"
+    ],
     "imageQuery": "leave no trace hiking pristine nature trail",
-    "keyPoints": ["7 principles explained", "waste management on trail", "campsite selection", "wildlife interaction rules", "trail etiquette"],
-    "relatedSlugs": ["multi-day-hike-planning", "read-topographic-maps-guide"],
+    "keyPoints": [
+      "7 principles explained",
+      "waste management on trail",
+      "campsite selection",
+      "wildlife interaction rules",
+      "trail etiquette"
+    ],
+    "relatedSlugs": [
+      "multi-day-hike-planning",
+      "read-topographic-maps-guide"
+    ],
     "published": false
   },
   {
@@ -400,11 +1027,30 @@
     "title": "How to Train for a Long-Distance Hike: A 12-Week Plan",
     "slug": "train-for-long-distance-hike",
     "category": "how-to",
-    "tags": ["fitness", "training", "preparation", "long-distance", "beginner-friendly"],
-    "keywords": ["train for long hike", "hiking training plan", "prepare for thru-hike"],
+    "tags": [
+      "fitness",
+      "training",
+      "preparation",
+      "long-distance",
+      "beginner-friendly"
+    ],
+    "keywords": [
+      "train for long hike",
+      "hiking training plan",
+      "prepare for thru-hike"
+    ],
     "imageQuery": "hiking training fitness trail preparation",
-    "keyPoints": ["12-week progressive plan", "cardio and strength balance", "weighted pack training", "elevation gain focus", "injury prevention"],
-    "relatedSlugs": ["knee-pain-prevention-hiking", "camino-de-santiago-guide"],
+    "keyPoints": [
+      "12-week progressive plan",
+      "cardio and strength balance",
+      "weighted pack training",
+      "elevation gain focus",
+      "injury prevention"
+    ],
+    "relatedSlugs": [
+      "knee-pain-prevention-hiking",
+      "camino-de-santiago-guide"
+    ],
     "published": false
   },
   {
@@ -412,11 +1058,30 @@
     "title": "Knee Pain While Hiking: Prevention, Treatment, and Exercises",
     "slug": "knee-pain-prevention-hiking",
     "category": "how-to",
-    "tags": ["fitness", "health", "knees", "injury-prevention", "exercises"],
-    "keywords": ["knee pain hiking", "prevent knee pain hiking", "hiking knee exercises"],
+    "tags": [
+      "fitness",
+      "health",
+      "knees",
+      "injury-prevention",
+      "exercises"
+    ],
+    "keywords": [
+      "knee pain hiking",
+      "prevent knee pain hiking",
+      "hiking knee exercises"
+    ],
     "imageQuery": "hiking knee exercises stretching trail fitness",
-    "keyPoints": ["common causes on descent", "strengthening exercises", "trekking pole technique", "taping and bracing", "when to see a doctor"],
-    "relatedSlugs": ["trekking-poles-guide", "train-for-long-distance-hike"],
+    "keyPoints": [
+      "common causes on descent",
+      "strengthening exercises",
+      "trekking pole technique",
+      "taping and bracing",
+      "when to see a doctor"
+    ],
+    "relatedSlugs": [
+      "trekking-poles-guide",
+      "train-for-long-distance-hike"
+    ],
     "published": false
   }
 ]
