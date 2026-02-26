@@ -1,0 +1,40 @@
+[[main]]
+  name = "Trail Guides"
+  pageRef = "trail-guides"
+  weight = 10
+
+[[main]]
+  name = "Gear Reviews"
+  pageRef = "gear-reviews"
+  weight = 20
+
+[[main]]
+  name = "How-To"
+  pageRef = "how-to"
+  weight = 30
+
+[[main]]
+  name = "About"
+  pageRef = "about"
+  weight = 40
+
+[[main]]
+  name = "Search"
+  pre = "search"
+  pageRef = "search"
+  weight = 50
+
+[[footer]]
+  name = "Trail Guides"
+  pageRef = "trail-guides"
+  weight = 10
+
+[[footer]]
+  name = "Gear Reviews"
+  pageRef = "gear-reviews"
+  weight = 20
+
+[[footer]]
+  name = "About"
+  pageRef = "about"
+  weight = 30

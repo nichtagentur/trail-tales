@@ -1,0 +1,86 @@
+/* Trail Tales Custom Styles */
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Reading progress bar */
+#reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, rgb(34, 139, 76), rgb(210, 150, 40));
+  z-index: 9999;
+  transition: width 0.1s ease-out;
+}
+
+/* Card hover effects */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Hero image styling */
+.hero-image img,
+article img {
+  border-radius: 8px;
+}
+
+/* Blockquote styling */
+blockquote {
+  border-left: 4px solid rgb(34, 139, 76);
+  background: rgba(34, 139, 76, 0.05);
+  padding: 1rem 1.5rem;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+}
+
+.dark blockquote {
+  background: rgba(34, 139, 76, 0.1);
+}
+
+/* FAQ section styling */
+.faq-section details {
+  border: 1px solid rgba(120, 108, 90, 0.2);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.faq-section summary {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.faq-section details[open] summary {
+  margin-bottom: 0.5rem;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Image lazy load fade-in */
+img[loading="lazy"] {
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

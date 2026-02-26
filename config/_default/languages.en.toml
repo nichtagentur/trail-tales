@@ -1,0 +1,21 @@
+disabled = false
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "Trail Tales"
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "January 2, 2006"
+  description = "Expert hiking guides, gear reviews, and trail tips for adventurers worldwide. From the Dolomites to Patagonia -- plan your next trek with confidence."
+  copyright = "Trail Tales"
+
+[params.author]
+  name = "Trail Tales"
+  headline = "Your Guide to the World's Best Trails"
+  bio = "Trail Tales is a hiking and trekking resource built by outdoor enthusiasts. We cover trail guides, gear reviews, and practical how-to advice for hikers of all levels -- from day hikes to multi-week expeditions."
+  links = [
+    { github = "https://github.com/nichtagentur/trail-tales" },
+  ]

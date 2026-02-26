@@ -1,0 +1,36 @@
+:root {
+  /* Neutral: warm off-white to dark earth */
+  --color-neutral: 250, 247, 242;
+  --color-neutral-50: 250, 247, 242;
+  --color-neutral-100: 245, 240, 231;
+  --color-neutral-200: 230, 222, 208;
+  --color-neutral-300: 200, 188, 168;
+  --color-neutral-400: 160, 145, 125;
+  --color-neutral-500: 120, 108, 90;
+  --color-neutral-600: 90, 80, 65;
+  --color-neutral-700: 65, 58, 48;
+  --color-neutral-800: 42, 38, 32;
+  --color-neutral-900: 28, 25, 22;
+  /* Primary: forest green */
+  --color-primary-50: 240, 249, 244;
+  --color-primary-100: 220, 240, 228;
+  --color-primary-200: 178, 224, 196;
+  --color-primary-300: 120, 200, 152;
+  --color-primary-400: 60, 170, 100;
+  --color-primary-500: 34, 139, 76;
+  --color-primary-600: 22, 115, 60;
+  --color-primary-700: 18, 92, 48;
+  --color-primary-800: 16, 72, 40;
+  --color-primary-900: 12, 55, 32;
+  /* Secondary: earth brown/amber */
+  --color-secondary-50: 255, 251, 240;
+  --color-secondary-100: 254, 243, 220;
+  --color-secondary-200: 252, 228, 180;
+  --color-secondary-300: 248, 206, 130;
+  --color-secondary-400: 240, 180, 75;
+  --color-secondary-500: 210, 150, 40;
+  --color-secondary-600: 175, 120, 30;
+  --color-secondary-700: 140, 95, 22;
+  --color-secondary-800: 108, 72, 18;
+  --color-secondary-900: 75, 50, 12;
+}

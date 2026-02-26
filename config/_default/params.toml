@@ -1,0 +1,74 @@
+colorScheme = "trail"
+defaultAppearance = "light"
+autoSwitchAppearance = true
+
+enableSearch = true
+enableCodeCopy = false
+enableStructuredBreadcrumbs = true
+
+mainSections = ["trail-guides", "gear-reviews", "how-to"]
+
+disableImageOptimization = false
+hotlinkFeatureImage = false
+
+highlightCurrentMenuArea = true
+smartTOC = true
+
+[header]
+  layout = "fixed-fill-blur"
+
+[footer]
+  showMenu = true
+  showCopyright = true
+  showThemeAttribution = false
+  showAppearanceSwitcher = true
+  showScrollToTop = true
+
+[homepage]
+  layout = "hero"
+  homepageImage = "img/hero.jpg"
+  showRecent = true
+  showRecentItems = 9
+  showMoreLink = true
+  showMoreLinkDest = "/trail-guides/"
+  cardView = true
+  cardViewScreenWidth = false
+
+[article]
+  showDate = true
+  showDateUpdated = false
+  showAuthor = true
+  showHero = true
+  heroStyle = "big"
+  showBreadcrumbs = true
+  showDraftLabel = true
+  showHeadingAnchors = true
+  showPagination = true
+  showReadingTime = true
+  showTableOfContents = true
+  showRelatedContent = true
+  relatedContentLimit = 3
+  showTaxonomies = true
+  showWordCount = false
+  sharingLinks = ["twitter", "linkedin", "reddit", "facebook", "whatsapp"]
+
+[list]
+  showHero = true
+  heroStyle = "background"
+  showBreadcrumbs = true
+  showSummary = true
+  showCards = true
+  cardView = true
+  cardViewScreenWidth = false
+  groupByYear = false
+
+[taxonomy]
+  showTermCount = true
+  showBreadcrumbs = true
+  cardView = true
+
+[term]
+  showBreadcrumbs = true
+  showTableOfContents = false
+  groupByYear = false
+  cardView = true
