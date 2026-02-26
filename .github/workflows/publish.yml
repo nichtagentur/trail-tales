@@ -35,6 +35,7 @@ jobs:
         env:
           CLAUDE_API_KEY_1: ${{ secrets.CLAUDE_API_KEY_1 }}
           ANTHROPIC_API_KEY: ${{ secrets.CLAUDE_API_KEY_1 }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: node scripts/generate-post.js
