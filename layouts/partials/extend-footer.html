@@ -3,15 +3,51 @@
 <div id="reading-progress"></div>
 <script>
 (function() {
-  const bar = document.getElementById('reading-progress');
+  var bar = document.getElementById('reading-progress');
   if (!bar) return;
+
+  var ticking = false;
+
+  function updateProgress() {
+    var h = document.documentElement;
+    var scrollTop = window.pageYOffset || h.scrollTop;
+    var scrollHeight = h.scrollHeight - h.clientHeight;
+    if (scrollHeight > 0) {
+      var pct = Math.min((scrollTop / scrollHeight) * 100, 100);
+      bar.style.width = pct + '%';
+    }
+    ticking = false;
+  }
+
   window.addEventListener('scroll', function() {
-    const h = document.documentElement;
-    const scrollTop = h.scrollTop || document.body.scrollTop;
-    const scrollHeight = h.scrollHeight - h.clientHeight;
-    const pct = (scrollTop / scrollHeight) * 100;
-    bar.style.width = pct + '%';
-  });
+    if (!ticking) {
+      requestAnimationFrame(updateProgress);
+      ticking = true;
+    }
+  }, { passive: true });
+
+  updateProgress();
 })();
 </script>
 {{ end }}
+
+<!-- Intersection Observer for scroll-reveal on cards -->
+<script>
+(function() {
+  if (!('IntersectionObserver' in window)) return;
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.style.animationPlayState = 'running';
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.article-link--card').forEach(function(card) {
+    card.style.animationPlayState = 'paused';
+    observer.observe(card);
+  });
+})();
+</script>

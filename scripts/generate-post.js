@@ -10,6 +10,7 @@ const TOPICS_FILE = path.join(ROOT, 'data', 'topics.json');
 
 // API keys from env
 const CLAUDE_API_KEY = process.env.CLAUDE_API_KEY_1 || process.env.ANTHROPIC_API_KEY;
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const UNSPLASH_ACCESS_KEY = process.env.UNSPLASH_ACCESS_KEY;
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
@@ -20,7 +21,61 @@ if (!CLAUDE_API_KEY) {
 
 const anthropic = new Anthropic({ apiKey: CLAUDE_API_KEY });
 
-// ---- Unsplash image fetch ----
+// ---- Gemini Nanobanana image generation (primary) ----
+async function fetchGeminiImage(query) {
+  if (!GEMINI_API_KEY) {
+    console.log('No GEMINI_API_KEY set, skipping Gemini image generation.');
+    return null;
+  }
+  try {
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=${GEMINI_API_KEY}`;
+    const res = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        contents: [{
+          parts: [{
+            text: `Create a stunning, high-quality landscape photograph of ${query}. Style: professional nature photography, dramatic golden hour lighting, vivid colors, wide angle, 16:9 composition. No text or watermarks.`
+          }]
+        }],
+        generationConfig: {
+          responseModalities: ["TEXT", "IMAGE"]
+        }
+      })
+    });
+
+    if (!res.ok) {
+      const errText = await res.text();
+      console.log(`Gemini API error: ${res.status} - ${errText.substring(0, 200)}`);
+      return null;
+    }
+
+    const data = await res.json();
+    const parts = data.candidates?.[0]?.content?.parts;
+    if (!parts) {
+      console.log('Gemini: no parts in response');
+      return null;
+    }
+
+    for (const part of parts) {
+      if (part.inlineData) {
+        const buffer = Buffer.from(part.inlineData.data, 'base64');
+        return {
+          buffer,
+          alt: query,
+          credit: 'Generated with Gemini'
+        };
+      }
+    }
+    console.log('Gemini: no image in response');
+    return null;
+  } catch (err) {
+    console.log('Gemini image generation failed:', err.message);
+    return null;
+  }
+}
+
+// ---- Unsplash image fetch (fallback 1) ----
 async function fetchUnsplashImage(query) {
   if (!UNSPLASH_ACCESS_KEY) {
     console.log('No UNSPLASH_ACCESS_KEY set, skipping Unsplash.');
@@ -38,7 +93,7 @@ async function fetchUnsplashImage(query) {
     const data = await res.json();
     if (!data.results || data.results.length === 0) return null;
     const photo = data.results[0];
-    const imgUrl = photo.urls.regular; // 1080px wide
+    const imgUrl = photo.urls.regular;
     const imgRes = await fetch(imgUrl);
     const buffer = Buffer.from(await imgRes.arrayBuffer());
     return {
@@ -52,10 +107,10 @@ async function fetchUnsplashImage(query) {
   }
 }
 
-// ---- OpenAI image fallback ----
+// ---- OpenAI image fallback (fallback 2) ----
 async function fetchOpenAIImage(query) {
   if (!OPENAI_API_KEY) {
-    console.log('No OPENAI_API_KEY set, skipping image generation.');
+    console.log('No OPENAI_API_KEY set, skipping OpenAI image generation.');
     return null;
   }
   try {
@@ -82,9 +137,10 @@ async function fetchOpenAIImage(query) {
   }
 }
 
-// ---- Get hero image ----
+// ---- Get hero image: Gemini -> Unsplash -> OpenAI ----
 async function getHeroImage(query) {
-  let img = await fetchUnsplashImage(query);
+  let img = await fetchGeminiImage(query);
+  if (!img) img = await fetchUnsplashImage(query);
   if (!img) img = await fetchOpenAIImage(query);
   return img;
 }
@@ -99,7 +155,6 @@ async function toWebP(buffer) {
 
 // ---- Generate article with Claude ----
 async function generateArticle(topic, allTopics) {
-  // Build related article links
   const relatedLinks = (topic.relatedSlugs || [])
     .map(slug => {
       const related = allTopics.find(t => t.slug === slug);
@@ -169,33 +224,18 @@ function buildFrontMatter(topic, faq, imageCredit) {
   const truncDesc = description.length > 155 ? description.substring(0, 152) + '...' : description;
   const truncTitle = topic.title.length > 60 ? topic.title.substring(0, 57) + '...' : topic.title;
 
-  const fm = {
-    title: truncTitle,
-    date: dateStr,
-    draft: false,
-    description: truncDesc,
-    tags: topic.tags,
-    categories: [topic.category === 'trail-guides' ? 'Trail Guides' : topic.category === 'gear-reviews' ? 'Gear Reviews' : 'How-To'],
-    series: topic.tags.includes('multi-day') ? ['Multi-Day Treks'] : topic.tags.includes('gear') ? ['Gear Guide'] : [],
-    showTableOfContents: true,
-    showHero: true,
-    heroStyle: 'big'
-  };
-
-  if (faq.length > 0) {
-    fm.faq = faq;
-  }
-
-  // YAML front matter
   let yaml = '---\n';
-  yaml += `title: ${JSON.stringify(fm.title)}\n`;
-  yaml += `date: ${fm.date}\n`;
-  yaml += `draft: ${fm.draft}\n`;
-  yaml += `description: ${JSON.stringify(fm.description)}\n`;
-  yaml += `tags:\n${fm.tags.map(t => `  - "${t}"`).join('\n')}\n`;
-  yaml += `categories:\n${fm.categories.map(c => `  - "${c}"`).join('\n')}\n`;
-  if (fm.series.length > 0) {
-    yaml += `series:\n${fm.series.map(s => `  - "${s}"`).join('\n')}\n`;
+  yaml += `title: ${JSON.stringify(truncTitle)}\n`;
+  yaml += `date: ${dateStr}\n`;
+  yaml += `draft: false\n`;
+  yaml += `description: ${JSON.stringify(truncDesc)}\n`;
+  yaml += `tags:\n${topic.tags.map(t => `  - "${t}"`).join('\n')}\n`;
+  const catName = topic.category === 'trail-guides' ? 'Trail Guides' : topic.category === 'gear-reviews' ? 'Gear Reviews' : 'How-To';
+  yaml += `categories:\n  - "${catName}"\n`;
+  if (topic.tags.includes('multi-day')) {
+    yaml += `series:\n  - "Multi-Day Treks"\n`;
+  } else if (topic.tags.includes('gear')) {
+    yaml += `series:\n  - "Gear Guide"\n`;
   }
   yaml += `showTableOfContents: true\n`;
   yaml += `showHero: true\n`;
@@ -215,10 +255,8 @@ function buildFrontMatter(topic, faq, imageCredit) {
 
 // ---- Main ----
 async function main() {
-  // Load topics
   const topics = JSON.parse(fs.readFileSync(TOPICS_FILE, 'utf8'));
 
-  // Find next unpublished
   const topic = topics.find(t => !t.published);
   if (!topic) {
     console.log('All topics have been published!');
@@ -228,24 +266,19 @@ async function main() {
   console.log(`Generating article: ${topic.title}`);
   console.log(`Category: ${topic.category} | Slug: ${topic.slug}`);
 
-  // Generate article content
   console.log('Calling Claude API...');
   const articleBody = await generateArticle(topic, topics);
   console.log(`Article generated: ~${articleBody.split(/\s+/).length} words`);
 
-  // Extract FAQ for schema
   const faq = extractFAQ(articleBody);
   console.log(`Extracted ${faq.length} FAQ items`);
 
-  // Fetch hero image
   console.log(`Fetching image: "${topic.imageQuery}"`);
   const img = await getHeroImage(topic.imageQuery);
 
-  // Create page bundle directory
   const postDir = path.join(ROOT, 'content', topic.category, topic.slug);
   fs.mkdirSync(postDir, { recursive: true });
 
-  // Save image
   let imageCredit = '';
   if (img) {
     const webpBuffer = await toWebP(img.buffer);
@@ -256,11 +289,9 @@ async function main() {
     console.log('No image available -- article will have no hero image');
   }
 
-  // Build and save markdown
   const frontMatter = buildFrontMatter(topic, faq, imageCredit);
   let fullContent = frontMatter + '\n' + articleBody;
 
-  // Add image credit at bottom if available
   if (imageCredit) {
     fullContent += `\n\n---\n\n*Hero image: ${imageCredit}*\n`;
   }
@@ -268,7 +299,6 @@ async function main() {
   fs.writeFileSync(path.join(postDir, 'index.md'), fullContent);
   console.log(`Saved: content/${topic.category}/${topic.slug}/index.md`);
 
-  // Mark topic as published
   topic.published = true;
   fs.writeFileSync(TOPICS_FILE, JSON.stringify(topics, null, 2) + '\n');
   console.log('Updated topics.json');

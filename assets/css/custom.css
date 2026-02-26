@@ -1,86 +1,483 @@
-/* Trail Tales Custom Styles */
+/* ============================================================
+   Trail Tales — Topographic Editorial Design System
+   A magazine-quality hiking blog aesthetic
+   ============================================================ */
 
-/* Typography */
+/* ---- Typography Foundation ---- */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', 'Georgia', serif;
   font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.15;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.011em;
 }
 
-/* Reading progress bar */
+/* Article title — editorial scale */
+#single_header h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.08;
+}
+
+/* Section headings in article body */
+.article-content h2 {
+  font-size: 1.65rem;
+  margin-top: 2.8rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(var(--color-neutral-300), 0.5);
+  letter-spacing: -0.02em;
+}
+
+.article-content h3 {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+
+/* Body text — generous, readable */
+.article-content {
+  font-size: 1.075rem;
+  line-height: 1.78;
+  color: rgb(var(--color-neutral-700));
+}
+
+.dark .article-content {
+  color: rgb(var(--color-neutral-200));
+}
+
+/* Drop cap on first paragraph of articles */
+.article-content > p:first-of-type::first-letter {
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  font-size: 3.6em;
+  float: left;
+  line-height: 0.78;
+  margin-right: 0.08em;
+  margin-top: 0.06em;
+  color: rgb(var(--color-primary-600));
+}
+
+.dark .article-content > p:first-of-type::first-letter {
+  color: rgb(var(--color-primary-400));
+}
+
+/* ---- Reading Progress Bar ---- */
 #reading-progress {
   position: fixed;
   top: 0;
   left: 0;
   width: 0%;
-  height: 3px;
-  background: linear-gradient(90deg, rgb(34, 139, 76), rgb(210, 150, 40));
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    rgb(var(--color-primary-500)),
+    rgb(var(--color-secondary-500))
+  );
   z-index: 9999;
-  transition: width 0.1s ease-out;
+  transition: none;
+  opacity: 0.85;
 }
 
-/* Card hover effects */
-.card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* ---- Card System — Editorial Grid ---- */
+.article-link--card {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  border-color: rgba(var(--color-neutral-200), 0.8) !important;
+  overflow: hidden;
 }
 
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+.article-link--card:hover {
+  transform: translateY(-6px) scale(1.005);
+  box-shadow:
+    0 20px 40px -12px rgba(var(--color-neutral-900), 0.12),
+    0 4px 12px -2px rgba(var(--color-neutral-900), 0.06);
 }
 
-/* Hero image styling */
-.hero-image img,
-article img {
-  border-radius: 8px;
+.dark .article-link--card {
+  border-color: rgba(var(--color-neutral-700), 0.6) !important;
 }
 
-/* Blockquote styling */
+.dark .article-link--card:hover {
+  box-shadow:
+    0 20px 40px -12px rgba(0, 0, 0, 0.4),
+    0 4px 12px -2px rgba(0, 0, 0, 0.2);
+}
+
+/* Card image — cinematic zoom on hover */
+.thumbnail_card {
+  overflow: hidden;
+}
+
+.thumbnail_card img {
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.article-link--card:hover .thumbnail_card img {
+  transform: scale(1.06);
+}
+
+/* Card content spacing */
+.article-link--card .p-4 {
+  padding: 1.25rem 1.5rem;
+}
+
+.article-link--card .p-4 h2 {
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+}
+
+/* ---- Hero Image ---- */
+article img,
+.hero-image img {
+  border-radius: 6px;
+}
+
+/* Hero section on homepage */
+.shadow-xl.rounded-2xl {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* ---- Blockquotes — Magazine Pull-Quote ---- */
 blockquote {
-  border-left: 4px solid rgb(34, 139, 76);
-  background: rgba(34, 139, 76, 0.05);
-  padding: 1rem 1.5rem;
+  position: relative;
+  border-left: 3px solid rgb(var(--color-primary-500));
+  background: linear-gradient(
+    135deg,
+    rgba(var(--color-primary-50), 0.5),
+    rgba(var(--color-neutral-100), 0.3)
+  );
+  padding: 1.75rem 2rem 1.75rem 2.25rem;
   border-radius: 0 8px 8px 0;
   font-style: italic;
+  font-size: 1.05em;
+  margin: 2rem 0;
+}
+
+blockquote::before {
+  content: "\201C";
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: 800;
+  color: rgb(var(--color-primary-300));
+  position: absolute;
+  top: -0.15rem;
+  left: 0.65rem;
+  line-height: 1;
+  opacity: 0.5;
 }
 
 .dark blockquote {
-  background: rgba(34, 139, 76, 0.1);
+  border-left-color: rgb(var(--color-primary-400));
+  background: linear-gradient(
+    135deg,
+    rgba(var(--color-primary-900), 0.3),
+    rgba(var(--color-neutral-800), 0.3)
+  );
 }
 
-/* FAQ section styling */
-.faq-section details {
-  border: 1px solid rgba(120, 108, 90, 0.2);
-  border-radius: 8px;
-  padding: 1rem;
-  margin-bottom: 0.75rem;
+.dark blockquote::before {
+  color: rgb(var(--color-primary-600));
 }
 
-.faq-section summary {
+/* ---- Taxonomy Badges — Nature Tones ---- */
+/* Override Blowfish badge styling */
+.rounded-md.border.border-primary-400 {
+  border-color: rgba(var(--color-primary-400), 0.4) !important;
+  background: rgba(var(--color-primary-50), 0.6);
+  color: rgb(var(--color-primary-700)) !important;
+  font-weight: 500;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.55rem !important;
+  transition: all 0.25s ease;
+}
+
+.rounded-md.border.border-primary-400:hover {
+  background: rgba(var(--color-primary-100), 0.8);
+  border-color: rgb(var(--color-primary-400)) !important;
+}
+
+.dark .rounded-md.border.border-primary-600 {
+  border-color: rgba(var(--color-primary-500), 0.3) !important;
+  background: rgba(var(--color-primary-900), 0.4);
+  color: rgb(var(--color-primary-300)) !important;
+}
+
+.dark .rounded-md.border.border-primary-600:hover {
+  background: rgba(var(--color-primary-800), 0.5);
+}
+
+/* ---- Article Meta — Refined ---- */
+.article-content a {
+  color: rgb(var(--color-primary-600));
+  text-decoration: underline;
+  text-decoration-color: rgba(var(--color-primary-400), 0.4);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1.5px;
+  transition: text-decoration-color 0.2s ease;
+}
+
+.article-content a:hover {
+  text-decoration-color: rgb(var(--color-primary-500));
+}
+
+.dark .article-content a {
+  color: rgb(var(--color-primary-400));
+  text-decoration-color: rgba(var(--color-primary-500), 0.3);
+}
+
+/* Date and reading time — editorial accent */
+.text-neutral-500 .px-2 {
+  color: rgb(var(--color-primary-400));
+}
+
+/* ---- Table of Contents — Sidebar Polish ---- */
+.toc {
+  border-left: 2px solid rgba(var(--color-primary-300), 0.3);
+  font-size: 0.85rem;
+}
+
+.toc a {
+  transition: color 0.2s ease;
+}
+
+/* ---- Footer — Editorial Refinement ---- */
+#site-footer {
+  border-top: 1px solid rgba(var(--color-neutral-200), 0.6);
+  margin-top: 2rem;
+}
+
+.dark #site-footer {
+  border-top-color: rgba(var(--color-neutral-700), 0.4);
+}
+
+/* ---- Homepage Hero — Dramatic Overlay ---- */
+/* Strengthen the hero gradient for text legibility */
+.mix-blend-multiply {
+  opacity: 0.72;
+}
+
+/* Hero text should be crisp */
+.relative.shadow-xl h1 {
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  letter-spacing: -0.025em;
+}
+
+.relative.shadow-xl h2 {
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+  letter-spacing: 0.02em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+/* ---- Breadcrumbs ---- */
+nav[aria-label="breadcrumb"] a,
+a[href*="/trail-guides"],
+a[href*="/gear-reviews"],
+a[href*="/how-to"] {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* ---- Horizontal Rules ---- */
+.article-content hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(var(--color-neutral-300), 0.6) 20%,
+    rgba(var(--color-neutral-300), 0.6) 80%,
+    transparent
+  );
+  margin: 3rem 0;
+}
+
+.dark .article-content hr {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(var(--color-neutral-600), 0.5) 20%,
+    rgba(var(--color-neutral-600), 0.5) 80%,
+    transparent
+  );
+}
+
+/* ---- Lists in Articles ---- */
+.article-content ul li,
+.article-content ol li {
+  margin-bottom: 0.35rem;
+}
+
+.article-content ul li::marker {
+  color: rgb(var(--color-primary-400));
+}
+
+.article-content ol li::marker {
+  color: rgb(var(--color-primary-500));
   font-weight: 600;
-  cursor: pointer;
 }
 
-.faq-section details[open] summary {
-  margin-bottom: 0.5rem;
+/* ---- Strong text — editorial weight ---- */
+.article-content strong {
+  font-weight: 600;
+  color: rgb(var(--color-neutral-800));
 }
 
-/* Smooth scrolling */
+.dark .article-content strong {
+  color: rgb(var(--color-neutral-100));
+}
+
+/* ---- Related Articles Section ---- */
+section h2:has(+ .grid) {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgb(var(--color-neutral-400));
+}
+
+/* ---- Sharing Links ---- */
+.sharing-links a {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.sharing-links a:hover {
+  transform: scale(1.15);
+}
+
+/* ---- Smooth Scrolling ---- */
 html {
   scroll-behavior: smooth;
 }
 
-/* Image lazy load fade-in */
-img[loading="lazy"] {
-  opacity: 0;
-  animation: fadeIn 0.5s ease forwards;
+/* ---- Selection Color ---- */
+::selection {
+  background: rgba(var(--color-primary-200), 0.5);
+  color: rgb(var(--color-primary-900));
 }
 
-@keyframes fadeIn {
+.dark ::selection {
+  background: rgba(var(--color-primary-700), 0.5);
+  color: rgb(var(--color-primary-100));
+}
+
+/* ---- Image Polish ---- */
+.article-content img {
+  border-radius: 6px;
+  margin: 1.5rem 0;
+}
+
+/* ---- Scroll to Top Button ---- */
+a[href="#the-top"] {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 0.3s ease;
+}
+
+a[href="#the-top"]:hover {
+  transform: translateY(-3px);
+}
+
+/* ---- Mobile Refinements ---- */
+@media (max-width: 640px) {
+  #single_header h1 {
+    font-size: 1.75rem;
+    letter-spacing: -0.02em;
+  }
+
+  .article-content {
+    font-size: 1.025rem;
+    line-height: 1.72;
+  }
+
+  .article-content h2 {
+    font-size: 1.4rem;
+    margin-top: 2.2rem;
+  }
+
+  .article-content > p:first-of-type::first-letter {
+    font-size: 3em;
+  }
+
+  blockquote {
+    padding: 1.25rem 1.25rem 1.25rem 1.5rem;
+  }
+
+  blockquote::before {
+    font-size: 3rem;
+    left: 0.4rem;
+  }
+
+  .article-link--card .p-4 {
+    padding: 1rem 1.15rem;
+  }
+}
+
+/* ---- Print Styles ---- */
+@media print {
+  #reading-progress,
+  .toc,
+  .sharing-links {
+    display: none !important;
+  }
+
+  .article-content {
+    font-size: 11pt;
+    line-height: 1.6;
+  }
+}
+
+/* ---- Subtle Entrance Animations ---- */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
   to {
     opacity: 1;
+    transform: translateY(0);
   }
+}
+
+/* Animate cards on page load */
+.article-link--card {
+  animation: fadeSlideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+
+.grid .article-link--card:nth-child(1) { animation-delay: 0.05s; }
+.grid .article-link--card:nth-child(2) { animation-delay: 0.1s; }
+.grid .article-link--card:nth-child(3) { animation-delay: 0.15s; }
+.grid .article-link--card:nth-child(4) { animation-delay: 0.2s; }
+.grid .article-link--card:nth-child(5) { animation-delay: 0.25s; }
+.grid .article-link--card:nth-child(6) { animation-delay: 0.3s; }
+.grid .article-link--card:nth-child(7) { animation-delay: 0.35s; }
+.grid .article-link--card:nth-child(8) { animation-delay: 0.4s; }
+.grid .article-link--card:nth-child(9) { animation-delay: 0.45s; }
+
+/* Animate article header */
+#single_header {
+  animation: fadeSlideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.1s backwards;
+}
+
+/* ---- Header Navigation Polish ---- */
+header nav a {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: color 0.2s ease;
 }
